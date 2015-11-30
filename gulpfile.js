@@ -58,6 +58,7 @@ gulp.task('build', function() {
 gulp.task('serve', function(done) {
   gulp.src('')
     .pipe(server({
+      host: '192.168.1.9',
       livereload: {
         enable: true,
         filter: function(filePath, cb) {
